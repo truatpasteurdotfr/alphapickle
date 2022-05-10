@@ -7,7 +7,7 @@ RUN	apt-get update && \
 RUN	conda update --yes -n base -c defaults conda && \
 	conda update --yes --all 
 
-RUN cd /opt && git clone https://github.com/mattarnoldbio/alphapickle && \
+RUN cd /opt && git clone https://github.com/truatpasteurdotfr/alphapickle && \
 	bash -c 'eval "$(conda shell.bash hook)" && \
 	conda env create --name alphapickle --file /opt/alphapickle/linux64requirements.yml && \
 	date +"%Y-%m-%d-%H%M" > /last_update'
