@@ -12,3 +12,5 @@ export PATH
 eval "$(conda shell.bash hook)" && \
 conda activate alphapickle
 
+%runscript
+python /opt/alphapickle/run_AlphaPickle.py $@
