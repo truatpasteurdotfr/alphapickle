@@ -6,6 +6,9 @@ From: ghcr.io/truatpasteurdotfr/alphapickle:main
 PYTHONNOUSERSITE=1 
 export PYTHONNOUSERSITE
 
+PATH=/opt/alphapickle:$PATH
+export PATH
+
 eval "$(conda shell.bash hook)" && \
 conda activate alphapickle
 
